@@ -1,0 +1,11 @@
+{
+    "cordova-sqlite-common": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/litehelpers/cordova-sqlite-common",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

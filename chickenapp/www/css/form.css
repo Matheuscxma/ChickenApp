@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+form {
+    height: inherit;
+    margin: auto;
+}
+
+input, textarea{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255,255,255, .8);
+}
+
+input#cUrg:hover {
+    background-color: rgba(221,221,221,0);
+}
+
+input:hover, textarea:hover {
+    background-color: rgba(221,221,221,.8);
+}
+
+img#cLimpar{
+    margin-left: 150px;
+}
+
+input#cEnviar:hover {
+    background-color: rgba(255,255,255, .8);
+}
+
+
+legend {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset{
+    border: 1px solid #080808 ;
+    margin: 20px auto 20px auto;
+}
+
+fieldset#sexo {
+    width: 150px;
+    margin-left: 30%;
+    border: 1px solid #080808;
+}
+
+fieldset#usuario{
+
+}
+
+fieldset#endereco{
+
+}
+
+fieldset#mensagem{
+
+}
+
+fieldset#pedido{
+
+}

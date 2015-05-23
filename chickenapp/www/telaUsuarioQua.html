@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tela Usuario</title>
+    <!-- Other site required references -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="img/Icone.png">
+            </a>
+            <h3 class="navbar-text navbar-right">Chicken App</h3>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="alert alert-success">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        Bem Vindo(a) ao Chicken App!
+    </div>
+
+    <div class="text-center">
+        <ul class="pagination ">
+          <li class="active"><a href="#">S</a></li>
+          <li><a href="#">T</a></li>
+          <li><a href="#">Q</a></li>
+          <li><a href="#">Q</a></li>
+          <li><a href="#">S</a></li>
+          <li><a href="#">S</a></li>
+          <li><a href="#">D</a></li>
+        </ul>
+    </div>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <h3>Prato do Dia</h3>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-info">
+                    <!-- ______________________________________________________________________Trigger the modal with a button -->
+                      <button type="button" class="btn btn-info btn-bg pull-right" data-toggle="modal" data-target="#myModal">
+                            <span class="glyphicon glyphicon-info-sign"></span>
+                      </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+                            
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Ingredientes da refeição</h4>
+                                </div>
+                                <div class="modal-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-info">Arroz</li>
+                                    <li class="list-group-item list-group-item-info">Feijão</li>
+                                    <li class="list-group-item list-group-item-info">Frango Assado</li>
+                                    <li class="list-group-item list-group-item-info">Salada de Alface</li>
+                                    <li class="list-group-item list-group-item-info">Beterraba</li>
+                                    <li class="list-group-item list-group-item-info">Cenoura</li>
+                                </ul>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                    <!-- Modal End_______________________________________________________________________________________________________-->
+                    <div class="text-center">
+                    <img src="img/frango.jpg" class="img-circle" alt="Frango" width="200" >
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-info text-center"><h3>Frango Assado</h3></li>
+ <!--Comentários_________________________________________________________________________________________________________________________________-->
+           <li class="list-group-item list-group-item-info">
+            <div class="detailBox">
+                <div class="titleBox">
+                  <label>Comentários</label>
+                </div>
+                <div class="commentBox">
+                    
+                    <p class="taskDescription">Deixe aqui sua opnião sobre o prato do dia.</p>
+                </div>
+                            </br>
+                            </br>
+                            </br>
+                            </br>
+                <div class="actionBox">
+                    <ul class="commentList">
+                        <li>
+                            <div class="commenterImage">
+                              <img src="http://lorempixel.com/50/50/people/9" />
+                            </div>
+                            <div class="commentText">
+                                <p class="">A comida estava maravilhosa!!! :D </p> <span class="date sub-text">em 5 de Maio, 2015</span>
+                            </div>
+                        </li>
+                    </ul>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Envie seu comentário" />
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </li>
+<!-- Fim Comentários_________________________________________________________________________________________________________________________________-->
+</ul>
+
+
+        </li>
+    </ul>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <!-- Other site required references -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="img/Icone.png">
+            </a>
+            <p class="navbar-text navbar-right">Chincken App - ADMINISTRAÇÃO </p>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <a href="adm2.html" class="btn btn-info btn-lg btn-block">Gerenciamento de Pratos</a>
+    <a href="index.html" class="btn btn-danger btn-lg btn-block">Log out</a>
+</div>
+<div class="container">
+    <h3 class="text-center">Cadastro de Alimentos</h3>
+    <form role="form">
+        <div class="form-group">
+            <label for="cNomeAlimento">Nome do Alimento</label>
+            <input type="text" class="form-control" id="cNomeAlimento" placeholder="Ex:Batata">
+        </div>
+
+        <div class="form-group">
+            <label for="cValEnergetico">Valores Nutricionais</label>
+
+            <div class="input-group">
+                <input type="number" class="form-control" min="0" max="10000" id="cValEnergetico" placeholder="Valor Energético"/>
+                <span class="input-group-addon" id="energia-addon">kcal</span>
+            </div>
+
+            <div class="input-group">
+                <input type="number" class="form-control" min="0" max="10000" id="cGordTotais" placeholder="Gorduras Totais"/>
+                <span class="input-group-addon" id="gordura-addon">gramas</span>
+            </div>
+
+            <div class="input-group">
+                <input type="number" class="form-control" min="0" max="10000" id="cProteinas" placeholder="Proteínas"/>
+                <span class="input-group-addon" id="proteina-addon">gramas</span>
+            </div>
+
+            <div class="input-group">
+                <input type="number" class="form-control" min="0" max="10000" id="cCarboitratos" placeholder="Carboidratos"/>
+                <span class="input-group-addon" id="carboitratos-addon">gramas</span>
+            </div>
+
+        </div>
+
+       <div class="form-group">
+           <label for="cTipo">Tipo de Alimento</label>
+           <select class="form-control" id="cTipo">
+               <optgroup label="Vegetais">
+                   <option>Fruta</option>
+                   <option>Verdura</option>
+                   <option>Legume</option>
+                   <option>Hotaliças</option>
+               </optgroup>
+
+               <optgroup label="Carne">
+                   <option>Boi</option>
+                   <option>Peixe</option>
+                   <option selected>Frango</option>
+                   <option>Suíno</option>
+               </optgroup>
+
+
+               <optgroup label="Bebidas">
+                   <option>Refrigerante</option>
+                   <option>Suco</option>
+                   <option>Água</option>
+                   <option>Vitamina</option>
+               </optgroup>
+           </select>
+       </div>
+
+        <div class="form-group">
+            <label for="cDataAlimento">Data de inscrição</label>
+            <input type="date" class="form-control" id="cDataAlimento">
+        </div>
+
+        <div class="form-group">
+        <input type="submit" class="btn btn-success btn-lg btn-block" value="Confirmar"/>
+        <input type="reset" class="btn btn-danger btn-lg btn-block" value="Cancelar"/>
+        </div>
+    </form>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
